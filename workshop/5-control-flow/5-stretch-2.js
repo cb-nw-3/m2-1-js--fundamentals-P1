@@ -24,3 +24,15 @@
  * (The numbers get big quickly!)
  *
  */
+
+// Your example above Included 0 on the list, if 0 is included, 12586269025 is 51st number
+// the correct answer should be 7778742049 which is the 50th
+let fibList = [0, 1];
+
+while (fibList.length < 50) {
+  // If we want to include 12586269025 in the results, change the expression to <=
+  let num = fibList[fibList.length - 1] + fibList[fibList.length - 2];
+  fibList.push(num);
+}
+
+console.log(fibList[fibList.length - 1]);
