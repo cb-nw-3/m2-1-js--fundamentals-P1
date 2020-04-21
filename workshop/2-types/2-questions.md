@@ -26,7 +26,7 @@
 2. (x) 7 == 7
 3. (x) 7 == '7'
 4. (x) 7 != 0
-5. (x) 7 !== '7' --> true because 7 is not equal to the string 7
+5. (x) 7 !== '7' --> strict equality, checks for both type and value
 6. ( ) 7 != '7' 
 7. ( ) 7 != 7
 
