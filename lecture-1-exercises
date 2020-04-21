@@ -1,0 +1,45 @@
+1. true || false
+  TRUE
+
+2. false && false
+  FALSE
+
+3. 1 < 2 && 2 > 1
+  TRUE
+
+4. 31 < 13 || 1 < 2 && 3 > 1
+  TRUE
+
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31)
+  TRUE
+
+6. true && false && false || false && true
+  FALSE
+
+7. true && false || true || false
+  TRUE
+
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
+  TRUE
+
+9.  let data = [0, [], [], [1,2,3, [4]]]
+    How would you access the value 0?
+      data[0]
+
+    How would you access the value 3?
+      data[3][2]
+
+    How would you access the value 4?
+      data[3][3][0]
+
+10.   5, true, null, {name: 'bob', age: 23}, NaN, 23,
+      'hello', 0, ['mouse', 'cat', 'dog'], 'cat', false,
+      null, 7, '42', {product: 'cake', price: '50$'},
+      undefined, ['coconut', 24, 'banana'], -99
+
+        // Number: 6 - 5, NaN, 23, 0, 7, -99
+        // String: 3 - 'hello', 'cat', '42'
+        // Arrays: 2 - ['mouse', 'cat', 'dog'], ['coconut', 24, 'banana']
+        // objects: 2 - {name: 'bob', age: 23}, {product: 'cake', price: '50$'}
+        // empty: 3 - null, null, undefined
+        // boolean: 2 - true, false
