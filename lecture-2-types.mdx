@@ -194,7 +194,23 @@ Comparison operators and logical operators are usually combined in an expression
 7. true && false || true || false
 8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
 ```
-
+___________________________________
+Answer
+1. true || false
+	TRUE
+2. false && false
+	FALSE
+3. 1 < 2 && 2 > 1
+	TRUE
+4. 31 < 13 || (TRUE) 1 < 2 && 3 > 1 (TRUE)
+	READ ODER LEFT TO RIGHT : TRUE
+5. 400 <= 400 (TRUE) && 399 < 400 (TRUE) && (30 > 31 || 400 > 31) (TRUE)
+	TRUE
+6. true && false && false || false && true
+	FALSE AND FALSE
+7. true && false || true || false
+	TRUE
+___________________________________
 ---
 
 ## Exceptions, special cases and just plain annoying side-effects
@@ -283,7 +299,19 @@ let anArrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let anArrayOfNumbers = ['bacon', undefined, 900, true]
 
 1. How do we access the value 900?
+    // anArrayofNumbers [2]
 2. How do we access the value `true`?
+    // anArrayofNumbers [3]
+
+    ___________________________________
+
+    arr = [1,2,3,4]
+
+    arr [arr.lenght]
+        undefined
+    arr [arr.lenght  - 1]
+       4
+    ___________________________________
 
 ```
 
@@ -305,9 +333,16 @@ let table = [
 ]
 
 1. table[0][0]
+    1
 2. table[5][5]
+    36
 3. table[2][3]
+    16
 4. How would we access the value 27?
+    [4][2]
+    ___________________________________
+    Start at [0]
+    ___________________________________
 ```
 
 ---
@@ -321,8 +356,24 @@ let data = [0, [], [], [1,2,3, [4]]]
 ```
 
 1. How would you access the value `0`?
+  data [0]
 2. How would you access the value `3`?
+  1et data = [
+  0,
+  [],
+  [],
+  [
+    1,
+    2,
+    3,
+    [
+      4
+    ]
+  ]
+]
+[4][2]
 3. How would you access the value `4`?
+[3][3][0]
 
 ---
 
@@ -360,6 +411,15 @@ Group the following items together according to their type:
 // ...
 
 ```
+___________________________________
+Types
+// Number: -99, NaN
+// String:
+// Arrays:
+// Objects:
+// Empty value:
+// Boolean:
+___________________________________
 
 ---
 
@@ -372,6 +432,11 @@ Group the following items together according to their type:
 ```js
 { label: 'corn', price: 5.3 + '$' };
 { ISBN: 53532, isAvailable: true, author: 'Nakamoto' };
+
+___________________________________
+ISBN isAvailable and author
+Type of price : string
+___________________________________
 
 ```
 
@@ -402,8 +467,13 @@ let name = 'John';
 
 // What is the value of the following expressions?
 1. person.name
+    Bob
 2. person['name']
+    Bob
 3. person[name]
+    undefined
+      person[name] = variable
+      person.name = string
 
 ```
 
@@ -419,8 +489,11 @@ let key = 'name';
 
 // What is the value of the following expressions:
 1. person.key
+    undefined
 2. person['key']
+    undefined
 3. person[key]
+    Bob, same as doing person.name
 
 ```
 
