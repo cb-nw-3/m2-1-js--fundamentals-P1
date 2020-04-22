@@ -30,3 +30,18 @@
 // FizzBuzz
 // 16
 // ...
+
+
+for (let number = 1; number <= 100; number++) {
+    let printNum = number;
+
+    if (number % 3 === 0) {
+        printNum = `Fizz (${number})`;
+    }
+
+    if (number % 5 === 0) {
+        printNum = `Buzz (${number})`;
+    }
+
+    console.log(printNum);
+}
