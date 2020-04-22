@@ -1,0 +1,45 @@
+// 1. If it rains, I stay home.
+let currentWeather = 'rainy';
+
+  if (currentWeather === 'rainy') {
+    console.log('stay home');
+  }
+
+// 2. If I am hungry, I eat.
+let hunger = true;
+
+  if (hunger === true) {
+    console.log('eat');
+  }
+
+// 3. If it's 10pm, I go to bed. If not, I write code.
+let currentHour = 22;
+
+  if (currentHoue === 22) {
+    console.log('write code');
+  } else {
+    console.log('go to bed');
+  }
+
+// 4. Write a program that output all of the numbers from 0 to 25
+  for (let i = 0; i <= 25; i++) {
+    console.log(i);
+  }
+
+// 5. Write a program that output all of ODD the numbers from 0 to 25
+  for (let i = 1; i <= 25; i += 2) {
+    console.log(i);
+    
+    if (i % 2 === 1) {
+      console.log(i);
+    }
+  }
+
+// 6. Write a program that output all of the numbers from 0 to 25, but replaces all multiples of 5 by the phrase five alive!
+  for (let i = 0; i <= 25; i++) {
+    if (i % 5 === 0 && i !== 0) {
+      console.log('Five alive!');
+    } else {
+      console.log(i);
+    }
+  }
