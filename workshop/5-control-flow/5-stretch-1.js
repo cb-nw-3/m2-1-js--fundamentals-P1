@@ -16,3 +16,20 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+for (let i = 0; i <= 200; i++) {
+    console.log("Calculating" + i)
+    for (let j = 0; j <= 200; j++) {
+        let k = 0;
+        while (k < 2) {
+            if (i < j && i % j === 0) {
+                k++;
+            } else {
+                return;
+            }
+        }
+        if (k === 0) {
+            console.log(i);
+        }
+    }
+}
