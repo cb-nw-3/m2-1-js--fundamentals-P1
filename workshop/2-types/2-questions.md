@@ -41,8 +41,8 @@
 
 ## Question 5: Which of the following are valid objects?
 
-1. (X) {}
-2. (X) { 'hello' }
+1. ( ) {}
+2. ( ) { 'hello' }
 3. (X) { name: 'I am fruit' }
 4. (X) {'brand-name': 'Dior' }
 5. ( ) { brand-name: 'Channel' }
@@ -54,9 +54,9 @@
 
   - number of elements:
   - type of _each_ element:
-    - 'cat':
-    - 'dog':
-    - 'bird':
+    - 'cat': string
+    - 'dog': string
+    - 'bird': string
 
 (Use the same format for the answers to all prompts in Question 6)
 
@@ -163,8 +163,10 @@ if (temperature < 0) {
 }
 
 if (temperature < 0) {
-  console.log(`${str} It's very cold outside, you better wear a coat!`)
+  console.log(`${str} It's very cold outside, you better wear a coat!`);
+  str = `${str} it's very cold outside, you better wear a coat!`;
 } else {
-  console.log(`${str} It's beautiful outside, let's go swimming!`)
+  console.log(`${str} It's beautiful outside, let's go swimming!`);
+  str = `${str} It's beautiful outside, let's go swimming!`;
 }
 ```
