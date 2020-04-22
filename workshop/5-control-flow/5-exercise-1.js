@@ -12,3 +12,9 @@
 for (let number = 2; number < 5; number++) {
   console.log(number);
 }
+
+answer:
+
+for (let number = 1; number <= 5; number++) {
+  console.log(number);
+}
