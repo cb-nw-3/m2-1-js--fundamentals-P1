@@ -13,3 +13,9 @@
 // #####
 // ######
 // #######
+
+let arr = [];
+for (i = 0; i <= 6; i++) {
+  arr.push("#");
+  console.log(arr.toString(""));
+}

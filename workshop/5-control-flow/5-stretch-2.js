@@ -24,3 +24,21 @@
  * (The numbers get big quickly!)
  *
  */
+
+const findFibonacciNumber = (n) => {
+  let arr = [];
+
+  for (i = 0; i < 51; i++) {
+    if (i === 0) {
+      arr.push(0);
+    } else if (i === 1) {
+      arr.push(1);
+    } else {
+      arr.push(arr[i - 2] + arr[i - 1]);
+    }
+  }
+
+  return arr[n];
+};
+
+console.log(findFibonacciNumber(50));
