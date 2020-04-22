@@ -24,3 +24,10 @@
  * (The numbers get big quickly!)
  *
  */
+
+let result = [0,1];
+
+for (let i = 0; i < 50; i++){
+    result.push(result[i] + result[i+1]);
+}
+console.log(result[50]);

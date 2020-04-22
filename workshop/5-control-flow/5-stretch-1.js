@@ -16,3 +16,16 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+for (let num = 1; num <= 200; num++){
+    let isPrime = true;
+
+    for( let j = 2; j < num; j++){
+        if(num%j === 0){
+            isPrime = false;
+        }
+    }
+    if( isPrime === true){
+        console.log(num);
+    }
+}
