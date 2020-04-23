@@ -16,3 +16,23 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+//Solution
+
+//prime numbers are always divisble by 1 and by itself (no remainders)
+
+
+for (x = 1; x <= 100; x++) {
+    isPrime = true;
+    //test if number is divisible by any previous numbers before it
+    //if there is a factor, then it is not prime
+    for (y = 2; y < x; y++) {
+        if (x % y == 0) {
+            isPrime = false;
+        }
+    }
+    // only print prime numbers
+    if (isPrime){
+        console.log(x);
+    }
+}

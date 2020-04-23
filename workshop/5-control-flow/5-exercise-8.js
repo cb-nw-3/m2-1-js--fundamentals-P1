@@ -13,3 +13,13 @@
 // #####
 // ######
 // #######
+
+//Solution
+
+// Keep the string var outside so it keeps adding
+let string='';
+for(let x = 1; x <=7; x++) {
+    // console.log(x);
+    string += "#";
+    console.log(string);
+}
