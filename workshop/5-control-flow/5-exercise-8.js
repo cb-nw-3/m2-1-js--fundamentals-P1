@@ -13,3 +13,9 @@
 // #####
 // ######
 // #######
+
+let triangle = "";
+for (let counter = 1; counter <= 7; counter++) {
+  triangle = "#" + triangle;
+  console.log(triangle);
+}

@@ -117,13 +117,14 @@
 - type: array
 - value: two objects
 
+```
 ┌─────────┬──────────┬─────┐
 │ (index) │ name     │ age │
 ├─────────┼──────────┼─────┤
 │ 0       │ 'Morty'  │ 3   │
 │ 1       │ 'Summer' │ 7   │
 └─────────┴──────────┴─────┘
-
+```
 ## Question 8: Use string interpolation instead of concatenation
 
 1.

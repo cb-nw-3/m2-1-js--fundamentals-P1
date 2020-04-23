@@ -15,3 +15,8 @@
 // ...
 
 // many other possibilities here.
+
+
+for (let number = 0; number <= 15; number++) {
+  (number % 2) ? console.log(`the number ${number} is odd`) : console.log(`the number ${number} is even`)
+}

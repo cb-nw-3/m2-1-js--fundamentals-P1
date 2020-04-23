@@ -22,3 +22,10 @@ for (let number = 1; number <= 25; number++) {
     console.log(number);
   }
 }
+or
+
+for (let number = 1; number <= 25; number += 2) {
+  console.log(number);
+}
+
+

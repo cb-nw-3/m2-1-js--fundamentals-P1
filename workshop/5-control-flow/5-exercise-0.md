@@ -48,11 +48,23 @@ easier to read. Like the gap between 2. and 1. in the example's solution.
 5. } else {
 6. }
 
+
+
+
 Put your solution between the ```:
 _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
+
+
+
 ```
-// Your solution here!
+Answer:
+let sentence = 'Hello world!';
+if (sentence.includes('Hello')) {
+  console.log('Sentence DOES contain the word "Hello"');
+} else {
+  console.log('Sentence DOES NOT contain the word "Hello"');
+}
 
 ```
 

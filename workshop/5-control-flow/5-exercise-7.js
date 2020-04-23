@@ -30,3 +30,17 @@
 // FizzBuzz
 // 16
 // ...
+
+
+for (let number = 1; number <= 100; number++) {
+  if (!(number % 3) && !(number % 5)) {
+    console.log(`The number ${number}: FizzBuzz`)
+  } else if (!(number % 3)) {
+    console.log(`The number ${number}: Fizz`)
+  } else if (!(number % 5)) {
+    console.log(`The number ${number}: Buzz`)
+  } else {
+    console.log(number);
+  }
+}
+

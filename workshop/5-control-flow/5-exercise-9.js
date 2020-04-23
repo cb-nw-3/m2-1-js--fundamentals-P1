@@ -17,3 +17,15 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+let cell = ["#", "_"];
+let chessboard = ""
+let position = 0;
+for (let width = 1; width <= 8; width++) {
+  for (let height = 1; height <= 8; height++) {
+    chessboard += cell[position];
+    (position >= 1) ? position = 0 : position++;
+  }
+  (position === 0) ? position = 1 : position = 0;
+  chessboard += "\n"
+}
