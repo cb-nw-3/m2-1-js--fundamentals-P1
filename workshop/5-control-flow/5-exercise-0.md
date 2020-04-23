@@ -54,6 +54,14 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 // Your solution here!
 
+4. let sentence = 'Hello world!';
+3.   if (sentence.includes('Hello')) {
+2.     console.log('Sentence DOES contain the word "Hello"');
+5. } else {
+1.   console.log('Sentence DOES NOT contain the word "Hello"');
+6. }
+
+
 ```
 
 ## Question 2: Get the specified item in the nested array
