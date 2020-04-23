@@ -11,6 +11,7 @@
 // eg:
 // 0, 1, 4, 9, 16, ...
 
-for (let number = 0; number < 12; number++) {
-  console.log('the square of ', number, ' is ', square);
+for (let number = 0; number <= 12; number++) {
+  let square = number * number;
+  console.log("the square of ", number, " is ", square);
 }
