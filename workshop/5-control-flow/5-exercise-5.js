@@ -16,3 +16,29 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+
+
+for (let hoursOfTheDay = 0; hoursOfTheDay < 24; hoursOfTheDay++) {
+  if (hoursOfTheDay === 7 || hoursOfTheDay === 13 || hoursOfTheDay === 18) {
+    console.log(`It's ${hoursOfTheDay}. Time to eat`)
+  } else if (hoursOfTheDay >= 22 || hoursOfTheDay <= 5) {
+    console.log(`It's ${hoursOfTheDay}. Time to sleep`)
+  } else {
+    console.log(`It's ${hoursOfTheDay}. Time to train`)
+  }
+}
+
+//or
+
+for (let hoursOfTheDay = 0; hoursOfTheDay < 24; hoursOfTheDay++) {
+  switch (hoursOfTheDay) {
+    case 7: case 13: case 22:
+      console.log(`It's ${hoursOfTheDay}. Time to eat`)
+      break;
+    case 22: case 23: case 0: case 1: case 2: case 3: case 4: case 5:
+      console.log(`It's ${hoursOfTheDay}. Time to sleep`)
+      break;
+    default:
+      console.log(`It's ${hoursOfTheDay}. Time to sleep`)
+  }
+}
