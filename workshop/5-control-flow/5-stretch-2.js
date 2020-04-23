@@ -23,4 +23,13 @@
  * (Correct answer: 12586269025)
  * (The numbers get big quickly!)
  *
+ *
  */
+
+let fibonacciNumbers = [0, 1];
+for (let number = 1; number < 50; number++) {
+  fibonacciNumbers.push(
+    fibonacciNumbers[number - 1] + fibonacciNumbers[number]
+  );
+}
+console.log(fibonacciNumbers[50]);

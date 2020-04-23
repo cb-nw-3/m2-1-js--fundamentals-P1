@@ -16,3 +16,18 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+for (let number = 1; number <= 200; number++) {
+  var notPrime = false;
+  for (let testNumber = 3; testNumber < number; testNumber++) {
+    notPrime = false;
+    if (number % testNumber === 0) {
+      notPrime = true;
+      break;
+    }
+  }
+  if (!notPrime && number !== 1) {
+    console.log(number);
+  }
+}
+
+// The number one is not a prime number
