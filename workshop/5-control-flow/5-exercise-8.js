@@ -13,3 +13,11 @@
 // #####
 // ######
 // #######
+
+for (let i = 0; i < 7; i++) {
+  call = "#";
+  for (let x = 1; x <= i; x++) {
+    call += "#";
+  }
+  console.log(call);
+}
