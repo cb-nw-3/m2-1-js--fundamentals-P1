@@ -24,3 +24,14 @@
  * (The numbers get big quickly!)
  *
  */
+
+let secondPrevious = 0;
+let previous = 1;
+let fiboSum = 0;
+
+for (i = 1; i < 50; i++) {
+  fiboSum = secondPrevious + previous;
+  secondPrevious = previous;
+  previous = fiboSum;
+}
+console.log(fiboSum);
