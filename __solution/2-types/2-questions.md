@@ -126,8 +126,8 @@ The following values are always falsy:
 1. "Hi" + " " + "there" + "!"
 
 ```js
-const name = 'Jack';
-const greeting = 'Hi';
+const name = "Jack";
+const greeting = "Hi";
 
 console.log(`${greeting} ${name}!`);
 ```
@@ -135,8 +135,8 @@ console.log(`${greeting} ${name}!`);
 2. Convert the following snippet:
 
 ```js
-const person1 = { name: 'Mabel', age: 102 };
-const person2 = { name: 'Doug', age: 104 };
+const person1 = { name: "Mabel", age: 102 };
+const person2 = { name: "Doug", age: 104 };
 
 console.log(
   `${person1.name} and ${
@@ -150,7 +150,7 @@ console.log(
 3. Convert the following snippet
 
 ```js
-let str = 'Hi Kiddo!';
+let str = "Hi Kiddo!";
 const temperature = 5;
 
 if (temperature < 0) {
