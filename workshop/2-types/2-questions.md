@@ -104,7 +104,7 @@
 
 ## Question 8: Use string interpolation instead of concatenation
 
-1.
+1. 
 
 ```js
 const name = 'Jack';
@@ -112,7 +112,7 @@ const greeting = 'Hi';
 
 console.log(greeting + ' ' + name + '!');
 ```
-
+console.log(`${greeting} ${name}!`);
 2.
 
 ```js
@@ -128,6 +128,13 @@ console.log(
     ' years!'
 );
 ```
+console.log(
+  `${person1.name} and ${
+    person2.name
+  } are the oldest people I know. Together, they have lived for ${
+    person1.age + person2.age
+  } years!`
+);
 
 3.
 
@@ -141,3 +148,8 @@ if (temperature < 0) {
   str = str + ' ' + "It's beautiful outside, let's go swimming!";
 }
 ```
+if (temperature < 0) {
+  str = `${str} it's very cold outside, you better wear a coat!`;
+} else {
+  str = `${str} It's beautiful outside, let's go swimming!`;
+}
