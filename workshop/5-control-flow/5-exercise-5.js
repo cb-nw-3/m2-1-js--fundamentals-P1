@@ -16,3 +16,15 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+
+//Solution
+
+for (let hour=0; hour <= 23; hour++){
+    if(hour >= 22 || hour <= 5) {
+        console.log(`it\'s ${hour}. Time to sleep!`);
+    } else if (hour == 7 || hour == 13 || hour ==18) {
+        console.log(`it\'s ${hour}. Time to Eat!`)
+    } else {
+        console.log(`it\'s ${hour}. Time to Train!`);
+    }
+}
