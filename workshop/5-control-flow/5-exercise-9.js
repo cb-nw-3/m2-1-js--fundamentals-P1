@@ -17,3 +17,15 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for (let i = 0; i < 7; i++) {
+  let lineOdd = "#_#_#_#_";
+  let lineEven = "_#_#_#_#";
+  for (let x = 1; x <= i; x++) {
+    if (x % 2 === 1) {
+      console.log(lineOdd);
+    } else {
+      console.log(lineEven);
+    }
+  }
+}
