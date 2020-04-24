@@ -26,3 +26,13 @@ for (let i = 0; i <= 23; i++) {
     console.log('It\'s ' + i + 'h . Time to train!');
   }
 }
+
+for (let i = 0; i <= 23; i++) {
+  if (i === 7 || i === 13 || i === 18) {
+    console.log(`It's ${i}h. Time to eat!`);
+  } else if (i <= 5 || i >= 22) {
+    console.log(`It's ${i}h. Time to sleep!`);
+  } else {
+    console.log(`It's ${i}h. Time to train!`);
+  }
+}

@@ -10,8 +10,12 @@
 //
 // ANSWER: the number you should see in the console is 3127500
 
+let total = 0;
+
 for (let i = 0; i <= 5000; i++) {
   if (i % 4 === 0 && i !== 0) {
-    console.log(i);
+    total += i;
   }
 }
+
+console.log(`The total is ${total}`);
