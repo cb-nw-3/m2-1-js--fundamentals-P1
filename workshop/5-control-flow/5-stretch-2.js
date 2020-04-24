@@ -24,3 +24,12 @@
  * (The numbers get big quickly!)
  *
  */
+let fibArray = [];
+for (let x = 0; x <= 50; x++) {
+  if (x < 2) {
+    fibArray.push(x);
+  } else {
+    fibArray.push([fibArray.length - 1] + fibArray[fibArray.length - 2]);
+  }
+}
+console.log(fibArray[fibArray.length - 1]);

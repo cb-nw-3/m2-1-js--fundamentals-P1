@@ -13,3 +13,9 @@
 // #####
 // ######
 // #######
+for (let y = 1; y <= 7; y++) {
+  for (let x = 1; x <= y; x++) {
+    console.log("#");
+  }
+  console.log("\n");
+}
