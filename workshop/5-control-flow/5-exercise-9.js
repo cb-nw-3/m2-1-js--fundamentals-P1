@@ -29,3 +29,6 @@ for (let i = 0; i < 7; i++) {
     }
   }
 }
+
+/* saw the solution but did not quite understand the concept for new line; I believe two things are
+ * happening at the same time but I might be wrong. */

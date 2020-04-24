@@ -16,3 +16,25 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+/* was able to find this in internet but uses function to perform it; wasn't able to come up with a simpler one*/
+
+function printPrime(200) {
+    var primes = [];
+    for(var i = 1; i < 200; i++) {
+        primes[i] = true;
+    }
+    var limit = Math.sqrt(200);
+    for(var i = 2; i < limit; i++) {
+        if(primes[i] === true) {
+            for(var j = i * i; j < 200; j += i) {
+                primes[j] = false;
+            }
+        }
+    }
+    for(var i = 2; i < 200; i++) {
+        if(primes[i] === true) {
+            console.log(i + " " + primes[i]);
+        }
+    }
+}
+
