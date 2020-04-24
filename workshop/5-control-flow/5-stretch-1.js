@@ -16,3 +16,17 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+let primeArray = [];
+for (let x = 1; x <= 200; x++) {
+  let isPrime = true;
+  for (let y = x - 1; y > 1; y--) {
+    if (x % y == 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    primeArray.push(x);
+  }
+}
+console.log(primeArray.join());

@@ -17,3 +17,15 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for (let y = 0; y <= 7; y++) {
+  let numberArray = [];
+  for (let x = y; x <= 7 + y; x++) {
+    if (x % 2 == 0) {
+      numberArray.push("#");
+    } else {
+      numberArray.push("_");
+    }
+  }
+  console.log(numberArray.join(""));
+}
