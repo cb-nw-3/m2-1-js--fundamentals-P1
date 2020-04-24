@@ -24,3 +24,17 @@
  * (The numbers get big quickly!)
  *
  */
+
+
+ let prevValue1 = 0;
+ let prevValue2 = 1;
+ let totalValue = 0;
+
+for (let fiboIterator = 0; fiboIterator < 52; fiboIterator++) {
+
+    totalValue = prevValue1 + prevValue2;
+    prevValue1 = prevValue2;
+    prevValue2 = totalValue;
+    console.log(fiboIterator, ": ",totalValue);
+}
+

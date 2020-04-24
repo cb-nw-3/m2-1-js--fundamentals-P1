@@ -16,3 +16,27 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+for (let number = 1; number < 201; number++) {
+    let isPrime = true;
+    //  console.log("number is ",number);
+
+
+    //  take the number, countdown from that number to zero, and if any of those numbers divide evenly into
+    // the total (hence, modulo is 0, no remainder), it's not prime.  
+
+    
+    for (let countBackNum = (number-1); countBackNum > 1; countBackNum--) {
+        //  console.log(countBackNum);
+        let modulo = number %countBackNum;
+        // console.log(modulo);
+        if (modulo == 0)
+        {
+            isPrime = false;
+        }
+    }
+    if (isPrime)
+    {
+        console.log(number, " is prime!");
+    }
+}

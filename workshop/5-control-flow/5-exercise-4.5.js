@@ -15,3 +15,13 @@
 // ...
 
 // many other possibilities here.
+
+
+for (let number = 1; number < 16; number++) {
+    if (number % 2 == 0) {
+        console.log(number, ' is  even');
+    } else if  (number % 2 > 0)
+    {
+        console.log(number, ' is  odd');
+    }
+}

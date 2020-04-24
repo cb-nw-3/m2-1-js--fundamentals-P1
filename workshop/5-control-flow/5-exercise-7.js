@@ -11,6 +11,23 @@
 //   - If the number is divisible by 3 AND 5 (eg. 15), print "FizzBuzz"
 //   - For all other numbers, print the number itself.
 
+
+
+for (let number = 1; number < 101; number++) {
+
+    if (number %3 == 0 && number %5 == 0) {
+        console.log('FizzBuzz');
+    } else if (number %3 == 0){
+            console.log('Fizz');
+    } else if (number %5 == 0){
+            console.log('Buzz');
+    } else 
+    {
+        console.log(number);
+
+    }
+}
+
 // e.g.
 //
 // 1
