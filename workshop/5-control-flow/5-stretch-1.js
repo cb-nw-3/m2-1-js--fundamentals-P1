@@ -16,3 +16,19 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+for (let y = 1; y <= 200; y += 1) {
+    let prime = true;
+
+    // Is 'y' divided by any number before?
+    for(let i = 2; i < y; i++) {
+        if(y % i === 0) {
+            prime = false;
+        }
+    }
+    if (prime){
+        console.log(`Prime ${y}`);
+    } else {
+        console.log('Not prime');
+    }
+}
