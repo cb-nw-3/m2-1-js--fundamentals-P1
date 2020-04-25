@@ -17,3 +17,27 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for(x = 0; x <=7; x++){
+    if(x % 2 === 0){
+        grid = "_"
+        for(y = 0; y < 7; y++){
+            if(y % 2 === 0){
+                grid += "#"
+            }else{
+                grid += "_"
+            }
+        }
+    }else if(x % 2 !== 0){
+        grid = "#"
+        for(w = 0; w< 7; w++){
+            if(w % 2 === 0){
+                grid += "_"
+            }else{
+                grid += "#"
+            }
+
+        }
+    }  
+    console.log(grid)
+}

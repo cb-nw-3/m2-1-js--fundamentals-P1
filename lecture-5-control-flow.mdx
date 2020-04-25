@@ -75,6 +75,12 @@ Turn the following sentences into valid JavaScript `if` statements. _Use console
 // 1. If it rains, I stay home.
 let currentWeather = 'rainy';
 
+if (currentWeather='rainy'){
+  console.log("I Stay Home");
+};
+
+
+
 // 2. If I am hungry, I eat.
 let hunger = true;
 
@@ -142,7 +148,15 @@ Let's write a function that outputs 2^10 (two to the power of ten).
 ```js
 // Example
 
+let startingValue = 2;
+let loopCount = 0;
 
+while(loopCount <10){
+  loopCount += 1;
+  startingValue *= 2;
+}
+
+console.log(startingValue);
 ```
 
 ---
@@ -194,7 +208,9 @@ for (let number = 0; number <=12; number = number + 1) {
 Write a program that output all of the numbers from 0 to 25
 
 ```js
-// code here
+// for(let num = 0 ; num <= 25; num +=1){
+  console.log(num)
+}
 
 ```
 
@@ -206,7 +222,13 @@ Write a program that output all of ODD the numbers from 0 to 25
 
 ```js
 // code here
+  for(let num = 0 ; num <= 25; num +=1){
+  if (num % 2 === 0){
 
+  }else {
+    console.log(num)
+  }
+}
 ```
 
 ---
@@ -217,6 +239,13 @@ Write a program that output all of the numbers from 0 to 25, but replaces all mu
 
 ```js
 // code here
+for(let num = 0 ; num <= 25; num +=1){
+  if (num % 5 === 0 && num > 0){
+    console.log("five alive");
+  } else{
+    console.log(num);
+  }
+}
 
 ```
 
