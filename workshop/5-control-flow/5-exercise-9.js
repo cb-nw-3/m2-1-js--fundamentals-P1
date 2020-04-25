@@ -17,3 +17,30 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for (let i = 0; i < 8; i++) {
+    let sum = '';
+
+    if (i % 2 === 0) {
+        sum += '#';
+
+        for (let x = 0; x < 7; x++) {
+            if (x % 2 === 0) {
+                sum += '_'
+            } else {
+                sum += '#';
+            }
+        }
+    } else {
+        sum += '_';
+
+        for (let x = 0; x < 7; x++) {
+            if (x % 2 === 0) {
+                sum += '#'
+            } else {
+                sum += '_';
+            }
+        }
+    }
+    console.log(sum);
+}

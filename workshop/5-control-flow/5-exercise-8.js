@@ -13,3 +13,10 @@
 // #####
 // ######
 // #######
+for (let i = 0; i <= 7; i++) {
+    let sum = '#';
+    for (let x = 1; x <= i; x++){
+        sum += '#';
+    }
+    console.log(sum);
+}
