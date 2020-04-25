@@ -17,3 +17,15 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+let grid = "";
+for (let i = 0; i < 8; i++){
+    let str1 = '#_#_#_#_\n';
+    let str2 = '_#_#_#_#\n';
+    if(i%2 === 0){
+        grid += str1;
+    } else{
+        grid += str2;
+    }
+}
+console.log(grid);
