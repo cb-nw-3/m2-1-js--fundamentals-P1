@@ -17,3 +17,23 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+let chessboard = '';
+for (let row = 0; row < 8; row++) {
+  const isRowEven = row % 2 === 0;
+
+  for (let col = 0; col < 8; col++) {
+    const isColEven = col % 2 === 0;
+    if (isRowEven && isColEven) {
+      chessboard += '#';
+    } else if (!isRowEven && !isColEven) {
+      chessboard += '#';
+    } else {
+      chessboard += '_';
+    }
+  }
+  chessboard += '\n';
+}
+console.log(chessboard);
+
+// Thanks Josh for the extra time spent on this :)

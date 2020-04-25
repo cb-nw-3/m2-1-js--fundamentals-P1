@@ -15,3 +15,10 @@
 // ...
 
 // many other possibilities here.
+for (let number = 0; number < 16; number++) {
+  let type = 'odd';
+  if (number % 2 === 0) {
+    type = 'even'
+  }
+  console.log(`The number ${number} is ${type}`);
+}
