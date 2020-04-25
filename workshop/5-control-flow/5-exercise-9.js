@@ -17,3 +17,29 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+// generate entire board
+
+for (let i = 0; i < 8; i++) {
+    let checkerboardLine;
+
+    // generate one line
+    if (i % 2 === 0) {
+        for (let j = 0; j < 8; j++) {
+            if (j % 2 === 0) {
+                checkerboardLine += "#";
+            } else {
+                checkerboardLine += "_";
+            }
+        }
+    } else {
+        for (let j = 0; j < 8; j++) {
+            if (j % 2 === 0) {
+                checkerboardLine += "_";
+            } else {
+                checkerboardLine += "#";
+            }
+        }
+    }
+    console.log(checkerboardLine);
+}

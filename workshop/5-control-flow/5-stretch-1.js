@@ -16,3 +16,24 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+for (let i = 0; i <= 200; i++) {
+    for (let j = 0; j <= 200; j++) {
+        let isPrime = false;
+
+        if (i === 1 || i === 2) {
+            console.log(i);
+            break;
+        } else {
+
+            for (let k = 2; k < i; k++) {
+                if (i % k === 0) {
+                    break;
+                } else {
+                    console.log(i);
+                    break;
+                }
+            }
+        }
+    }
+}
