@@ -16,3 +16,13 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+let primeList = [];
+for (let i = 1; i <= 200; i++) {
+  let prime = true;
+  for (let j = 1; j < i; j++) {
+    if (j !== 1 && i % j == 0) prime = false;
+  }
+  if (prime) primeList.push(i);
+}
+console.log(primeList);

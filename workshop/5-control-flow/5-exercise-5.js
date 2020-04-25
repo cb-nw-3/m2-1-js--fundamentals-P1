@@ -16,3 +16,33 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+for (let i = 0; i < 24; i++) {
+  if (i < 5) {
+    console.log(`It's ${i}h. Still early, zzzZZzz`);
+  } else if (i === 5) {
+    console.log(`It's ${i}h. Wake up soldier.`);
+  } else if (i === 7 || i === 13 || i === 18) {
+    switch (i) {
+      case 7: {
+        console.log(`It's ${i}h. Time for breakfast.`);
+        break;
+      }
+      case 13: {
+        console.log(`It's ${i}h. Time for lunch.`);
+        break;
+      }
+      case 18: {
+        console.log(`It's ${i}h. Time for dinner.`);
+        break;
+      }
+      default:
+        break;
+    }
+  } else if (i === 22) {
+    console.log(`It's ${i}h. Time to sleep.`);
+  } else if (i >= 22) {
+    console.log(`It's ${i}h. zzZZZzzZ`);
+  } else {
+    console.log(`It's ${i}h. Time to train!`);
+  }
+}
