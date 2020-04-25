@@ -16,3 +16,29 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+// FYI I DON'T THINK 1 IS CONSIDERED A PRIME NUMBER. HOWEVER, AS REQUIRED ABOVE THIS CODE OUTPUTS 1 AS A PRIME NUMBER.
+
+let arr = [];
+
+const isItPrime = (n) => {
+  for (j = 2; j < n; j++) {
+    if (n % j === 0) {
+      return false;
+    }
+  }
+  arr.push(n);
+  return false;
+};
+
+for (i = 1; i <= 200; i++) {
+  if (i === 1) {
+    arr.push(i);
+  } else if (i === 2) {
+    arr.push(i);
+  } else {
+    isItPrime(i);
+  }
+}
+
+console.log(arr);
