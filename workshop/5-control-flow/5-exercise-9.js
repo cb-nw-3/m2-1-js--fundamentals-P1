@@ -17,3 +17,18 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+let row = 0;
+let col = 0;
+for (row; row < 8; row++) {
+  let line = "";
+  for (col; col <= row; col++) {
+    if (row === col) {
+      line += "#";
+    } else {
+      line += "_";
+    }
+    console.log("\n");
+  }
+  console.log(line);
+}

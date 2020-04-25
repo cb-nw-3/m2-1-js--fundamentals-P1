@@ -15,8 +15,9 @@
 // #######
 
 for (let i = 1; i < 8; i++) {
-  for (let j = 1; j <= i; j++) {
-    console.log("#");
+  let line = "";
+  for (let j = 1; j <= i; x++) {
+    line += "#";
   }
-  console.log("<br>");
+  console.log(line);
 }
