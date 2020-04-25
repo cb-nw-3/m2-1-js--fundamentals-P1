@@ -24,3 +24,15 @@
  * (The numbers get big quickly!)
  *
  */
+
+
+let number = [];
+
+number[0] = 0;
+number[1] = 1;
+
+// Add a number in a array and sum the 2 previous array elements
+for (let i = 2; i <= 50; i+= 1) {
+    number[i] = number[i - 1] + number[i - 2];
+    console.log(number[i]);
+}
