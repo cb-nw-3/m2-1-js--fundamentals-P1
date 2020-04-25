@@ -15,3 +15,10 @@
 // ...
 
 // many other possibilities here.
+for (let number = 0; number <= 15; number++) {
+  if (number % 2) {
+    console.log(number + " is odd");
+  } else {
+    console.log(number + " is even");
+  }
+}

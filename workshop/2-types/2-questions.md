@@ -137,7 +137,11 @@
 const name = "Jack";
 const greeting = "Hi";
 
+// Concatenation
 console.log(greeting + " " + name + "!");
+
+// Interpolation
+console.log(`${greeting} ${name}!`);
 ```
 
 2.
@@ -146,6 +150,8 @@ console.log(greeting + " " + name + "!");
 const person1 = { name: "Mabel", age: 102 };
 const person2 = { name: "Doug", age: 104 };
 
+// Concatenation
+// Take space and string that we don't need
 console.log(
   person1.name +
     " and " +
@@ -153,6 +159,15 @@ console.log(
     " are the oldest people I know. Together, they have lived for " +
     (person1.age + person2.age) +
     " years!"
+);
+
+// Interpolation
+console.log(
+  `${person1.name} and ${
+    person2.name
+  } are the oldest people I know. Together, they have lived for ${
+    person1.age + person2.age
+  } years!`
 );
 ```
 
@@ -162,12 +177,16 @@ console.log(
 let str = "Hi Kiddo!";
 const temperature = 5;
 
+// Concatenation
 if (temperature < 0) {
   str = str + " " + "It's very cold outside, you better wear a coat!";
 } else {
-  str = str + " " + "It's beautiful outside, let's go swimming!";
+  str = `${str} It's beautiful outside, let's go swimming!`;
 }
 ```
+
+//Interpolation
+//console.log(`${str} It's beautiful outside, let's go swimming!`);
 
 <!-- what’s the difference between false and falsy?
 False is a boolean value, there is only one “false” value. falsy refers to a value that evaluates to false.
@@ -184,4 +203,8 @@ if (hello) {
   console.log('hello!');
 }
 
-0 is a falsy value, so the condition is not met, and nothing happens (no greeting logged to the console) -->
+0 is a falsy value, so the condition is not met, and nothing happens (no greeting logged to the console)
+
+var = change
+const = don't change
+-->
