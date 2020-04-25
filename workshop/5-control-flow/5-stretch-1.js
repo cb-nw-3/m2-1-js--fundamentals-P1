@@ -18,18 +18,22 @@
  */
 
 for (let i = 0; i <= 200; i++) {
-    console.log("Calculating" + i)
     for (let j = 0; j <= 200; j++) {
-        let k = 0;
-        while (k < 2) {
-            if (i < j && i % j === 0) {
-                k++;
-            } else {
-                return;
-            }
-        }
-        if (k === 0) {
+        let isPrime = false;
+
+        if (i === 1 || i === 2) {
             console.log(i);
+            break;
+        } else {
+
+            for (let k = 2; k < i; k++) {
+                if (i % k === 0) {
+                    break;
+                } else {
+                    console.log(i);
+                    break;
+                }
+            }
         }
     }
 }
