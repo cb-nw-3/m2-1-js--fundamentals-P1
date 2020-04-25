@@ -16,3 +16,13 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+
+
+for (let number = 0; number <= 200; number++) {
+
+    if ((number % 2 !== 0) && (number % 3 !== 0)) {
+        console.log(number);
+    }
+}
+
