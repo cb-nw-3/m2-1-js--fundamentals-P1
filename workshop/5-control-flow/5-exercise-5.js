@@ -16,3 +16,20 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+
+
+let eating_hours = [7, 13, 18];
+let sleep_hours = [1, 2, 3, 4, 5, 22, 23];
+
+
+for (let hour = 1; hour < 24; hour++) 
+{
+    if (sleep_hours.includes(hour)){
+        console.log('It\'s ',hour,'h. Time to sleep!');
+    } else if ( eating_hours.includes(hour)) {
+        console.log('It\'s ',hour,'h. Time to eat!');
+    } else{
+        console.log('It\'s ',hour,'h. Time to train!');
+    }
+}
+

@@ -24,3 +24,19 @@
  * (The numbers get big quickly!)
  *
  */
+
+
+let prevValue1 = 0;
+let prevValue2 = 1;
+let totalValue = 0;
+
+console.log("0: ",totalValue);
+
+for (let fiboIterator = 1; fiboIterator < 51; fiboIterator++) {
+    console.log(fiboIterator, ": ",totalValue);
+
+    totalValue = prevValue1 + prevValue2;
+    prevValue1 = prevValue2;
+    prevValue2 = totalValue;
+}
+

@@ -17,3 +17,31 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+let gridString = "";
+
+for (let number = 1; number < 9; number++) {
+
+    if (number %2 == 0) {
+        for (let oddRowNumber = 1; oddRowNumber < 9; oddRowNumber++) {
+
+            if (oddRowNumber %2 == 0) {
+                gridString = gridString + "#"
+            } else 
+            {
+                gridString = gridString + "_"
+            }
+        }
+    } else  {
+        for (let evenRowNumber = 1; evenRowNumber < 9; evenRowNumber++) {
+            if (evenRowNumber %2 == 0) {
+                gridString = gridString + "_"
+            } else 
+            {
+                gridString = gridString + "#"
+            }
+        }
+    } 
+    gridString = gridString + "\n";
+}
+console.log(gridString);

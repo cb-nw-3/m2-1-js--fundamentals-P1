@@ -13,3 +13,10 @@
 // #####
 // ######
 // #######
+
+let hashString = "";
+for (let number = 1; number  < 8; number++) {
+    hashString = hashString + "#"
+    console.log(hashString)
+}
+
