@@ -82,6 +82,13 @@ let hunger = true;
 let currentHour = 22;
 
 ```
+___________________________________
+// 1. 
+
+// 2.
+
+// 3.
+___________________________________
 
 ---
 
@@ -134,7 +141,10 @@ while (number <= 12) {
 
 // let's break that down.
 ```
-
+___________________________________
+Reach end of loop it goes back to the condition.
+Until the " let number = 14 " because 14 is not less or equal to ' 12 ' 
+___________________________________
 ---
 
 Let's write a function that outputs 2^10 (two to the power of ten).
@@ -142,6 +152,16 @@ Let's write a function that outputs 2^10 (two to the power of ten).
 ```js
 // Example
 
+let startingValue = 2;
+let loopCount = 0;
+
+while (loopCout < 10) {
+  loopCount = loopCount + 1;
+    OR loopCount += 1; (most used)
+    startingValue *=2
+}
+
+console.log (startingValue);
 
 ```
 
@@ -175,8 +195,12 @@ for (let number = 0; number <=12; number = number + 1) {
 }
 
 // let's break that down.
-```
 
+```
+___________________________________
+8 % 3 // 2
+8 slices for 3 personnes can't be divided equaly
+___________________________________
 ---
 
 ⚠️ The **ONLY** way to break out of the loop is for the condition to be `false`. ⚠️
@@ -191,10 +215,14 @@ for (let number = 0; number <=12; number = number + 1) {
 
 #### Exercise 1
 
-Write a program that output all of the numbers from 0 to 25
+Write a program that outputs all of the numbers from 0 to 25
 
 ```js
-// code here
+// for (let number = 0; number <=25; number = number + 1) {
+  if (number) {
+    console.log(number);
+  }
+}
 
 ```
 
@@ -205,8 +233,12 @@ Write a program that output all of the numbers from 0 to 25
 Write a program that output all of ODD the numbers from 0 to 25
 
 ```js
-// code here
-
+// for (let number = 0; number <=25; number = number + 1) {
+  if (number % 2 === 1) {
+    console.log(number);
+  }
+}
+Looking number with remender of 1
 ```
 
 ---
@@ -216,8 +248,25 @@ Write a program that output all of ODD the numbers from 0 to 25
 Write a program that output all of the numbers from 0 to 25, but replaces all multipes of `5` by the phrase `five alive!`
 
 ```js
-// code here
+// for (let number = 0; number <=25; number = number + 1) {
+  if (number % 5 === 0 && number !==0) OR > 0 {
+    console.log('Five alive!');
+  } else {
+    console.log (number)
+  }
+}
 
 ```
+___________________________________
+The following values are always falsy:
 
+- `false`
+- `0` (zero)
+- `''` or `""` (empty string)
+- `null`
+- `undefined`
+- `NaN`
+
+**Everything else is truthy**
+___________________________________
 ---
