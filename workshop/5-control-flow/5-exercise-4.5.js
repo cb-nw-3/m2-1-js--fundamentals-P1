@@ -15,3 +15,12 @@
 // ...
 
 // many other possibilities here.
+
+for (let x = 0; x <= 15; x = x + 1) {
+  if (x % 2 === 0) {
+    type = "even";
+  } else {
+    type = "odd";
+  }
+  console.log(x + " is " + type);
+}
