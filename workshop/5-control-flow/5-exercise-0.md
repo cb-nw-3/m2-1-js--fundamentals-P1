@@ -20,107 +20,156 @@ easier to read. Like the gap between 2. and 1. in the example's solution.
 
 ## EXAMPLE - log all even numbers
 
-1. if (isEven) {
-2. let isEven = i % 2 === 0;
-3. console.log(i, 'is an even number!');
-4. }
-5. for (let i = 0; i < 10; i++) {
-6. }
+
+for (let i = 0; i < 10; i++) {
+     let isEven = i % 2 === 0;
+    if (isEven)
+    {
+ console.log( i, 'is an even number!');
+ }
+ }
+
+
+
 
 #### Solution:
 
 ```
-5. for (let i = 0; i < 10; i++) {
-2.   let isEven = i % 2 === 0;
-
-1.   if (isEven) {
-3.     console.log(i, 'is an even number!');
-4.   }
-6. }
+for (let i = 0; i < 10; i++) {
+let isEven = i % 2 === 0;
+ if (isEven) {
+console.log(i, 'is an even number!');
+}
+}
 ```
 
-## Question 1: Check if the sentence includes the word "Hello".
+## Question 1: Check if the sentence includes the word "Hello".DONE
 
-1. console.log('Sentence DOES NOT contain the word "Hello"');
-2. console.log('Sentence DOES contain the word "Hello"');
-3. if (sentence.includes('Hello')) {
-4. let sentence = 'Hello world!';
-5. } else {
-6. }
+
 
 Put your solution between the ```:
 _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ```
-// Your solution here!
+let sentence = 'Hello world!';
+ if (sentence.includes('Hello')) {
+console.log('Sentence DOES contain the word "Hello"');
+} else {
+console.log('Sentence DOES contain the word "Hello"');
+ }
 
 ```
 
 ## Question 2: Get the specified item in the nested array
+const array = [[1, [2, 3]]];
+ const firstIndex = 0;
 
-1. const firstIndex = 0;
-2. const array = [[1, [2, 3]]];
-3. console.log(array[firstIndex][secondindex][thirdIndex])
 4. const secondIndex = 1;
 5. const thirdIndex = = 0;
+3. console.log(array[firstIndex][secondindex][thirdIndex])
 
 ```
-// Your solution here!
+console.log(array[0][1][0]);
 ```
 
 ## Question 3: Log all numbers from 10 to 5
+GOOD VERSION
+let currentNum = 10;
+let min = 5;
+while (currentNum > min) {
+ console.log(currentNum);
+ currentNum = currentNum - 1;
+}
+OR
 
-1. while (currentNum > min) {
-2. let currentNum = 10;
-3. console.log(currentNum);
-4. let min = 5;
-5. currentNum = currentNum - 1;
-6. }
+NOT LIKE ONE BELOW BECAUSE 1ST SENTENCE UNDEFINED
+while (currentNum > min) {
+let currentNum = 10;
+let min = 5; {
+console.log(currentNum);
+currentNum = currentNum - 1;
+}
+}
 
-```
-// Your solution here!
-```
+for (let i = 0; i < 10; i++) {
+let isEven = i % 2 === 0;
+ if (isEven) {
+console.log(i, 'is an even number!');
+}
+}
 
 ## Question 4: Reverse the string to check for hidden messages
 
-1. const reversedArray = letterArray.reverse();
-2. console.log('Your message:', reversedString)
-3. const letterArray = encodedMessage.split('');
-4. const encodedMessage = 'gnidliub gruobuaF eht rednu deirub si erusaert ehT';
-5. if (reversedString.includes('treasure')) {
-6. }
-7. const reversedString = reversedArray.join('');
+ 
+const encodedMessage = 'gnidliub gruobuaF eht rednu deirub si erusaert ehT';
+const letterArray = encodedMessage.split('');
+const reversedArray = letterArray.reverse();
+const reversedString = reversedArray.join('');
+ if (reversedString.includes('treasure')) 
+{ console.log('Your message:', reversedString)
+ }
+
+encodedMessage
+.split('')
+.reverse()
+.join('')
+.includes('treasure')
+
+ Your message: The treasure is buried under the Faubourg building
 
 ```
-// Your solution here!
-```
-
-## Question 5: Add all the numbers from 10 to 0
-
-1. total = total + count;
-2. while (count > 0) {
-3. let total = 0;
-4. count = count - 1;
-5. console.log('The total is:', total)
-6. let count = 10;
-7. }
 
 ```
-// Your solution here!
+
+## Question 5: Add all the numbers from 10 to 0 REVIEW
+let count = 10;
+let total = 0;
+count = count - 1;
+total = total + count;
+while (count > 0) {
+console.log('The total is:', total)
+ }
+
 ```
+let count = 10;
+let total = 0;
+while (count > 0) {
+   total = total + count; 
+    count = count - 1;
+} 
+ console.log('The total is:', total);
+ 
 
 ## Question 6: Check if the array includes a specific number
 
-1. }
-2. let includesNumber;
-3. console.log('Array includes the number!')
-4. for (let i = 0; i < array.length; i++) {
-5. let item = array[i];
-6. if (item === numberToSearchFor) {
-7. let numberToSearchFor = 5;
-8. let array = [1, 3, 7, 4, 5, 2, 1];
-9. }
+let array = [1, 3, 7, 4, 5, 2, 1];
+let numberToSearchFor = 5; 
+let includesNumber;
 
-```
-// Your solution here!
-```
+for (let i = 0; i < array.length; i++){
+   let item = array[i];
+
+if (item === numberToSearchFor); {
+console.log('Array includes the number!')
+}
+}
+
+
+
+
+
+;
+
+
+
+let array = [1, 3, 7, 4, 5, 2, 1];
+let numberToSearchFor = 5; 
+let includesNumber;
+
+for (let i = 0; i < array.length; i++){
+   let item = array[i];
+
+if (item === numberToSearchFor); {
+console.log('Array includes the number!')
+}
+}
