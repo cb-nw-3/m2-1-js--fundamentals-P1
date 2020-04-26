@@ -12,3 +12,8 @@
 for (let number = 2; number < 5; number++) {
   console.log(number);
 }
+
+// Solution
+for (let number = 1; number <= 5; number++) {
+  console.log(number);
+}

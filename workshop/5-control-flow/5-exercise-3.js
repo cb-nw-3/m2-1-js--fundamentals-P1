@@ -14,3 +14,10 @@ for (let number = 0; number < 25; number++) {
   }
   console.log(number);
 }
+
+// Solution
+for (let number = 0; number <= 25; number++) {
+  if (number % 2 !== 0) {
+    console.log(number);
+  }
+}
