@@ -9,3 +9,9 @@
 // between 0 and 5000
 //
 // ANSWER: the number you should see in the console is 3127500
+let sum = 0;
+for(let i = 1; i <= 5000; i++){
+    if(i % 4 === 0){
+        sum = sum + i;
+    }
+}

@@ -24,3 +24,9 @@
  * (The numbers get big quickly!)
  *
  */
+
+let fibb = [0,1];
+for(let i = 1; i <= 49; i++ ){
+    fibb.push(fibb[i] + fibb[i - 1]);
+}
+console.log(fibb[50]);
