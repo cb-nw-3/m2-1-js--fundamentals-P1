@@ -13,3 +13,8 @@
 // #####
 // ######
 // #######
+let word = "";
+for (let count = 1; count <= 7; count++){
+    word = word+"#";
+    console.log(word);
+}

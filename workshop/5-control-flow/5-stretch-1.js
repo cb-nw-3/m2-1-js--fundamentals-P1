@@ -16,3 +16,6 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+
+//KEY IDEA:    if a % b != 0 for all b < a  then a is prime

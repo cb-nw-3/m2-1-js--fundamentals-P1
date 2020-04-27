@@ -12,5 +12,5 @@
 // 0, 1, 4, 9, 16, ...
 
 for (let number = 0; number < 12; number++) {
-  console.log('the square of ', number, ' is ', square);
+  console.log('the square of ', number, ' is ', number*number);
 }
