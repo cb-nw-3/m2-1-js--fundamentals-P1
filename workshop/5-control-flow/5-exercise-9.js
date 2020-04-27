@@ -18,17 +18,18 @@
 // #_#_#_#_
 // _#_#_#_#
 
-let row = 0;
-let col = 0;
-for (row; row < 8; row++) {
-  let line = "";
-  for (col; col <= row; col++) {
-    if (row === col) {
-      line += "#";
+let chessboard = "";
+for (let row = 0; row < 8; row++) {
+  const isRowEven = row % 2 === 0;
+  for (let col = 0; col < 8; col++) {
+    const isColEven = col % 2 === 0;
+    if (isRowEven && isColEven) {
+      chessboard += "#";
+    } else if (!isRowEven && !isColEven) {
+      chessboard += "#";
     } else {
-      line += "_";
+      chessboard += "_";
     }
-    console.log("\n");
   }
-  console.log(line);
+  chessboard += "\n";
 }
