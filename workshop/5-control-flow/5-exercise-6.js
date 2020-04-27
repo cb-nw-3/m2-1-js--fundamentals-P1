@@ -9,3 +9,10 @@
 // between 0 and 5000
 //
 // ANSWER: the number you should see in the console is 3127500
+
+var add = 0;
+for (let num = 4; num <= 5000; num++) {
+  if (num % 4 === 0) {
+    add += num;
+  }
+}
