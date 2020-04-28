@@ -12,6 +12,31 @@
 // 0 is even
 // 1 is odd
 // 2 is even
-// ...
+
+// let number = x;
+// for (x = 0; x < 16; x++) {
+// if x % 2 !== 0; {
+//     console.log (x, "is an even number");
+// } else {
+//     console.log (x, "is an odd number");
+// }
+// }
+
+// for (x = 0; x < 16; x++) {
+// let isEven = x%2 === 0;
+// If (isEven) {
+// console.log(x, "is an even number");
+// } else {
+// console.log(x, "is an odd number");
+// }
+// }
 
 // many other possibilities here.
+let number = x;
+for (x = 0; x < 16; x++) {
+  if (x % 2 === 0) {
+    console.log(x, "is an even number");
+  } else {
+    console.log(x, "is an odd number");
+  }
+}

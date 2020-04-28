@@ -6,3 +6,8 @@
 
 // Q4.3
 // Write a loop that will print to the console all of the EVEN integers from 1 to 100.
+for (x = 0; x < 101; x++) {
+  if (x % 2 === 0) {
+    console.log(x);
+  }
+}

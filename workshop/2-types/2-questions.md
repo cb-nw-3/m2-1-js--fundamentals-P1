@@ -34,32 +34,33 @@
 6. ( truthy) !undefined
 7. ( truthy) !NaN
 
-## Question 5: Which of the following are valid objects?
+## Question 5: Which of the following are valid objects? REVIEW
 
 1. ( yes empty object) {}
 2. (no ) { 'hello' }
 3. ( yes) { name: 'I am fruit' }
 4. ( yes) {'brand-name': 'Dior' }
-5. ( t) { brand-name: 'Channel' }
+5. ( no) { brand-name: 'Channel' }
 6. ( t) { cool_name: 'bob' + ' Dylan', age: 25 }
 
 ## Question 6: For each array, specify the number of elements and the type of each element.
 
-1. ['cat', 'dog', 'bird']   ARRAY
+1. ['cat', 'dog', 'bird'] ARRAY
 
 -3 number of elements:
 string- type of _each_ element:
-  - 'cat': string
-  - 'dog':string
-  - 'bird':string
+
+- 'cat': string
+- 'dog':string
+- 'bird':string
 
 (Use the same format for the answers to all prompts in Question 6)
 
-2. [[], 24, 'hello', true]  ARRAY, NUMBER,STRING,BOOLEAN
+2. [[], 24, 'hello', true] ARRAY, NUMBER,STRING,BOOLEAN
 
 3. [] EMPTY ARRAY
 
-4. [['romeo', 'juliet'], false]   ARRAY, BOOLEAN
+4. [['romeo', 'juliet'], false] ARRAY, BOOLEAN
 
 5. [{name: 'bob', age: 23}, {name: 'paul', age: 33}] ARRAY WITH OBJECTS
 
@@ -70,23 +71,26 @@ string- type of _each_ element:
 - type: string
 - value: bob
 
-
 2. let age = 45;
+
 - type: number
 - value: 45
 
 3. let isMarried = false;
- type: boolean
+   type: boolean
+
 - value: false
 
 4. let person = { name: name, age: age, isMarried: isMarried }
-type: object
+   type: object
+
 - value: { name: name, age: age, isMarried: isMarried }
 
 5. let kids = [{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]
-type: object
-value : [{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]
-(because arrays are a type of object in js)
+   type: object
+   value : [{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]
+   (because arrays are a type of object in js)
+
 ## Question 8: Use string interpolation instead of concatenation
 
 1.
@@ -98,15 +102,15 @@ const greeting = 'Hi';
 concatenation
 console.log( greeting + name + "!" );
 
-string interpolation 
+string interpolation
 console.log(`${greeting} ${name}!`);
 ```
 
-2.
+2. done
 
 ```js
-const person1 = { name: 'Mabel', age: 102 };
-const person2 = { name: 'Doug', age: 104 };
+const person1 = { name: "Mabel", age: 102 };
+const person2 = { name: "Doug", age: 104 };
 
 console.log(
   `${person1.name}
@@ -121,7 +125,7 @@ console.log(
 3.
 
 ```js
-let str = 'Hi Kiddo!';
+let str = "Hi Kiddo!";
 const temperature = 5;
 
 if (temperature < 0) {
