@@ -15,3 +15,14 @@
 // ...
 
 // many other possibilities here.
+
+
+for (let num = 0 ; num < 16 ; num++) {
+    let result = 'ODD';
+
+if (y % 2 === 0) {
+    result = 'EVEN';
+}
+
+     console.log('${num} is ${result}');
+}

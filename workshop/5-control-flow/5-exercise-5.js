@@ -16,3 +16,16 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+
+for (let time=0; time<24 ;time++){
+   let order ='train';
+
+   if (time<6 || time>21 ){
+   order='sleep';
+   }
+
+   if(time===7 || time===13 || time===18){
+   order='eat';
+   }
+   console.log(`It's ${time}h. Time to ${order}`);
+}

@@ -1,5 +1,6 @@
 # JavaScript Fundamentals - Part 1
 
+
 Today we will be learning the fundamentals of JavaScript!
 
 ## Setup

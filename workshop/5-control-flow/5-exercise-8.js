@@ -13,3 +13,11 @@
 // #####
 // ######
 // #######
+
+for (let char=0;char<7;char++){
+    let line='#'
+    for (let draw=1;draw<=char;draw++){
+        line+='#'
+    }
+    console.log(line)
+}

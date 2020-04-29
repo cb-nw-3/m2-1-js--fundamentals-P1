@@ -30,3 +30,22 @@
 // FizzBuzz
 // 16
 // ...
+
+for(let num=1 ;num<=100, num++){
+    let answer=num;
+
+    if (num % 3 === 0){
+    answer =`fizz (${num})`;
+    }
+
+    if (num % 5 === 0){
+        answer = `buzz (${num})`;
+    }
+
+    if(num % 3 === 0 && num % 5 === 0){
+        answer = `fizzbuzz (${num})`;
+    }
+
+    console.log(answer)
+
+}
