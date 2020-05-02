@@ -15,3 +15,9 @@
 // ...
 
 // many other possibilities here.
+for (int = 0; int <= 15 ; int++){
+	if (int % 2 == 0){console.log(int + ' is even');	
+	}else{
+	console.log(int + ' is odd');
+	}
+}
