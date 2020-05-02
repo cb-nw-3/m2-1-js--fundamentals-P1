@@ -16,3 +16,19 @@
  *
  * [1, 2, 3, 5, 7, 11, 13, ...]
  */
+
+let primes = [];
+
+for (i = 1; i <= 200; i++) {
+  let notPrime = false;
+  for (j = i - 1; j >= 2; j--) {
+    if (i % j === 0) {
+      notPrime = true;
+    }
+  }
+  if (notPrime === false) {
+    primes.push(i);
+  }
+}
+
+console.log(primes);
