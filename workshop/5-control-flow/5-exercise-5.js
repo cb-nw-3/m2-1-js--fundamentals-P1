@@ -16,3 +16,12 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+for (int = 0; int < 24 ; int++){
+	if (22 < int || int < 5 ){console.log(int + 'h' + ' Time To Sleep!');	
+	}else if(int == 7 || int==13 || int ==18){
+	console.log(int + 'h'+' Time to eat!');
+	}else{
+	console.log(int + 'h' + ' Time to train!');
+	}
+
+}

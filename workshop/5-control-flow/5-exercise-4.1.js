@@ -6,3 +6,6 @@
 
 // Q4.1
 // Write a loop that will print to the console all of the integers from 0 to 100.
+for (int = 0; int < 101; int++){
+	console.log(int);
+}
