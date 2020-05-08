@@ -30,7 +30,7 @@ JavaScript executes a program from start to finish in order.
 
 ```js
 if (condition) {
-  // do something
+  // do something if truthy
 }
 ```
 
