@@ -12,5 +12,8 @@
 // 0, 1, 4, 9, 16, ...
 
 for (let number = 0; number < 12; number++) {
-  console.log('the square of ', number, ' is ', square);
+  if (number % Math.sqrt(number) === 0) {
+    let square = Math.sqrt(number);
+    console.log('the square of ', square, ' is ', number,);
+  }
 }

@@ -17,3 +17,38 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for (let i = 0; i < 8; i++) {
+  if (i % 2 === 0) {
+    console.log('#_#_#_#_');
+  } else {
+    console.log('_#_#_#_#');
+  }
+}
+
+let firstSymbol = '#';
+let secondSymbol = '_';
+
+for (let i = 0; i < 8; i++) {
+  let line = '';
+
+  if (i % 2 === 0) {
+    for (let x = 0; x < 8; x++) {
+      if (x % 2 === 0) {
+        line += firstSymbol;
+      } else {
+        line += secondSymbol;
+      }
+    }
+  } else {
+    for (let x = 0; x < 8; x++) {
+      if (x % 2 === 1) {
+        line += firstSymbol;
+      } else {
+        line += secondSymbol;
+      }
+    }
+  }
+
+  console.log(line);
+}
